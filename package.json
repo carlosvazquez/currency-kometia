@@ -1,14 +1,15 @@
 {
   "name": "currency-kometia",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "> parse an integer to currency format",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --colors"
+    "test": "mocha --colors",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlosvazquez/currency-kometia.git"
+    "url": "https://github.com/carlosvazquez/currency-kometia.git"
   },
   "author": "",
   "license": "MIT",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/carlosvazquez/currency-kometia#readme",
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.1.1"
+    "mocha": "^5.1.1",
+    "semantic-release": "^15.4.1"
   }
 }
