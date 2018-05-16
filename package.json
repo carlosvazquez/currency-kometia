@@ -1,0 +1,23 @@
+{
+  "name": "currency-kometia",
+  "version": "0.0.1",
+  "description": "> parse an integer to currency format",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosvazquez/currency-kometia.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosvazquez/currency-kometia/issues"
+  },
+  "homepage": "https://github.com/carlosvazquez/currency-kometia#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  }
+}
