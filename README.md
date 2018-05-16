@@ -9,8 +9,9 @@ or
 var currency = require('currency-kometia);
 var CURRENCY = 'MX'
 
-console.log(currency.formatMoney(100000, CURRENCY));
-console.log(currency.formatMoney(100000));
+currency.formatMoney(100000, CURRENCY);
+
+currency.formatMoney(100000);
 
 ```
 ## License
