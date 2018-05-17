@@ -1,7 +1,10 @@
 # currency-kometia
 
-> parse an integer to currency format
 [![Coverage Status](https://coveralls.io/repos/github/carlosvazquez/currency-kometia/badge.svg?branch=master)](https://coveralls.io/github/carlosvazquez/currency-kometia?branch=master)
+
+[![Build Status](https://travis-ci.org/carlosvazquez/currency-kometia.svg?branch=master)](https://travis-ci.org/carlosvazquez/currency-kometia)
+
+> parse an integer to currency format
 
 ## Usage
 ```js
