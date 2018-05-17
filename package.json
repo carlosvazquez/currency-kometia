@@ -5,16 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --colors",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/carlosvazquez/currency-kometia.git"
-  },
-  "nyc": {
-    "temp-directory": "./coverage/.nyc_output"
   },
   "author": "Carlos Vazquez",
   "license": "MIT",
