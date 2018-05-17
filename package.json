@@ -1,17 +1,19 @@
 {
   "name": "currency-kometia",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "> parse an integer to currency format",
   "main": "index.js",
   "scripts": {
     "test": "mocha --colors",
-    "semantic-release": "semantic-release"
+    "coverage": "nyc --reporter=text mocha",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/carlosvazquez/currency-kometia.git"
   },
-  "author": "",
+  "author": "Carlos Vazquez",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/carlosvazquez/currency-kometia/issues"
@@ -20,6 +22,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.1.1",
-    "semantic-release": "^15.4.1"
+    "nyc": "^11.8.0",
+    "semantic-release": "^15.4.1",
+    "travis-deploy-once": "^5.0.0"
   }
 }
