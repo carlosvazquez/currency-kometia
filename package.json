@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/carlosvazquez/currency-kometia.git"
   },
+  "nyc": {
+    "temp-directory": "./coverage/.nyc_output"
+  },
   "author": "Carlos Vazquez",
   "license": "MIT",
   "bugs": {
