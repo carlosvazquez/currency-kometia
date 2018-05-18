@@ -1,8 +1,8 @@
 {
   "name": "currency-kometia",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "> parse an integer to currency format",
-  "main": "index.js",
+  "main": "src/currency.js",
   "scripts": {
     "test": "mocha --colors",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
