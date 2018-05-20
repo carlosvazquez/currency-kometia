@@ -1,11 +1,15 @@
-module.exports = formatMoney
+"use strict";
 
-function formatMoney(price, currency = "MX") {
+module.exports = formatMoney;
+
+function formatMoney(price) {
+  var currency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "MX";
+
   if (price == undefined || price == null) {
-    return
+    return;
   }
-  var _price = parseInt(price)
-  var formatPrice = (_price/= 100).toFixed(2)
-  formatPrice = formatPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-  return '$ ' + formatPrice + ' ' + currency
+  var _price = parseInt(price);
+  var formatPrice = (_price /= 100).toFixed(2);
+  formatPrice = formatPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return "$ " + formatPrice + " " + currency;
 }

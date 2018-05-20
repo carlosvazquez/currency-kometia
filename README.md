@@ -8,14 +8,11 @@
 
 ## Usage
 ```js
-// import
-import formatMoney from "currency-kometia"
-// or
 var currency = require("currency-kometia");
-
 var CURRENCY = 'MX'
-currency.formatMoney(100000, CURRENCY);
-currency.formatMoney(100000);
+
+currency(100000, CURRENCY);
+currency(100000);
 
 ```
 ## License
