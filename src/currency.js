@@ -6,7 +6,7 @@ function formatMoney(price) {
   var currency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "MX";
 
   if (price == undefined || price == null) {
-    return;
+    return undefined;
   }
   var _price = parseInt(price);
   var formatPrice = (_price /= 100).toFixed(2);
