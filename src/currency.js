@@ -1,15 +1,19 @@
 "use strict";
 
 module.exports = formatMoney;
+/**
+ * Set value to currency format.
+ * @param {number|string} value
+ * @returns {string}
+ */
+function formatMoney(value) {
+  var _currency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "MX";
 
-function formatMoney(price) {
-  var currency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "MX";
-
-  if (price == undefined || price == null) {
+  if (value == undefined || value == null) {
     return undefined;
   }
-  var _price = parseInt(price);
-  var formatPrice = (_price /= 100).toFixed(2);
-  formatPrice = formatPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  return "$ " + formatPrice + " " + currency;
+  var _price = parseInt(value);
+  var _formatPrice = (_price /= 100).toFixed(2);
+  _formatPrice = _formatPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return "$ " + _formatPrice + " " + _currency;
 }
