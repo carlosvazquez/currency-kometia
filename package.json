@@ -1,6 +1,6 @@
 {
   "name": "currency-kometia",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "> parse an integer to currency format",
   "main": "src/currency.js",
   "scripts": {
