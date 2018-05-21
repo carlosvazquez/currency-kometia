@@ -6,9 +6,27 @@
 
 > parse an integer to currency format
 
-## Usage
+## Install
+This project uses node and npm. Go check them out if you don't have them locally installed.
+
+> npm install --save currency-kometia
+
+> yarn add --save currency-kometia
+
+## Import
+Using ES6 modules
+
 ```js
-var currency = require("currency-kometia");
+import currency from 'currency-kometia'
+```
+
+Using CommonJS modules
+
+```js 
+var currency = require('currency-kometia')
+```
+
+```js
 var CURRENCY = 'MX'
 
 currency(100000, CURRENCY);
