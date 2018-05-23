@@ -9,16 +9,16 @@ describe("formating number to currency", () => {
   it("should exist formarMoney function", () => {
     assert.isFunction(formatMoney, "formarMoney is a function");
   });
-  it("should return $ 1000.00 MX when pass 100000 without currency", () => {
+  it("should return $ 1,000.00 MX when pass 100000 without currency", () => {
     const currency = formatMoney(100000)
     assert.equal(currency, result)
   })
-  it("should return $ 1000.00 MX when pass 100000 with currency", ()=> {
+  it("should return $ 1,000.00 when pass 100000 with currency", ()=> {
     const currency = formatMoney(100000, 'USD')
     const result = "$ 1,000.00 USD"
     assert.equal(currency, result);
   })
-  it("should return $ 1000.00 MX when pass 100000 as string", () => {
+  it("should return $ 1,000.00 MX when pass 100000 as string", () => {
     const currency = formatMoney("100000", CURRENCY);
     assert.equal(currency, result);
   })
